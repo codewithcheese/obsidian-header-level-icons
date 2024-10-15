@@ -1,0 +1,66 @@
+/* Apply the style for all header levels with header icons and numbers */
+.HyperMD-header-1 > .cm-fold-indicator::before,
+.HyperMD-header-2 > .cm-fold-indicator::before,
+.HyperMD-header-3 > .cm-fold-indicator::before,
+.HyperMD-header-4 > .cm-fold-indicator::before,
+.HyperMD-header-5 > .cm-fold-indicator::before,
+.HyperMD-header-6 > .cm-fold-indicator::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: -32px;  /* Adjust this value as needed */
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* SVG content for each header level */
+.HyperMD-header-1 > .cm-fold-indicator::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 6h16M4 12h9M4 18h9' stroke='%23d4d4d4' stroke-width='1.5'/%3E%3Ctext x='19' y='20' font-weight='600' font-family='sans-serif' font-size='14' fill='%23ababab' text-anchor='middle'%3E1%3C/text%3E%3C/svg%3E");
+}
+
+.HyperMD-header-2 > .cm-fold-indicator::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 6h16M4 12h9M4 18h9' stroke='%23d4d4d4' stroke-width='1.5'/%3E%3Ctext x='19' y='20' font-weight='600' font-family='sans-serif' font-size='14' fill='%23ababab' text-anchor='middle'%3E2%3C/text%3E%3C/svg%3E");
+}
+
+.HyperMD-header-3 > .cm-fold-indicator::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 6h16M4 12h9M4 18h9' stroke='%23d4d4d4' stroke-width='1.5'/%3E%3Ctext x='19' y='20' font-weight='600' font-family='sans-serif' font-size='14' fill='%23ababab' text-anchor='middle'%3E3%3C/text%3E%3C/svg%3E");
+}
+
+.HyperMD-header-4 > .cm-fold-indicator::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 6h16M4 12h9M4 18h9' stroke='%23d4d4d4' stroke-width='1.5'/%3E%3Ctext x='19' y='20'  font-weight='600' font-family='sans-serif' font-size='14' fill='%23ababab' text-anchor='middle'%3E4%3C/text%3E%3C/svg%3E");
+}
+
+.HyperMD-header-5 > .cm-fold-indicator::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 6h16M4 12h9M4 18h9' stroke='%23d4d4d4' stroke-width='1.5'/%3E%3Ctext x='19' y='20' font-weight='600' font-family='sans-serif' font-size='14' fill='%23ababab' text-anchor='middle'%3E5%3C/text%3E%3C/svg%3E");
+}
+
+.HyperMD-header-6 > .cm-fold-indicator::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 6h16M4 12h9M4 18h9' stroke='%23d4d4d4' stroke-width='1.5'/%3E%3Cpath stroke='%23d4d4d4' stroke-width='1.5'/%3E%3Ctext x='19' y='20' font-family='sans-serif' font-weight='600' font-size='14' fill='%23ababab' text-anchor='middle'%3E6%3C/text%3E%3C/svg%3E");
+}
+
+/* Hide the original collapse SVG */
+.HyperMD-header-1 > .cm-fold-indicator svg,
+.HyperMD-header-2 > .cm-fold-indicator svg,
+.HyperMD-header-3 > .cm-fold-indicator svg,
+.HyperMD-header-4 > .cm-fold-indicator svg,
+.HyperMD-header-5 > .cm-fold-indicator svg,
+.HyperMD-header-6 > .cm-fold-indicator svg {
+  display: none;
+}
+
+/* Add visual indication when collapsed */
+.HyperMD-header-1 > .cm-fold-indicator.is-collapsed::before,
+.HyperMD-header-2 > .cm-fold-indicator.is-collapsed::before,
+.HyperMD-header-3 > .cm-fold-indicator.is-collapsed::before,
+.HyperMD-header-4 > .cm-fold-indicator.is-collapsed::before,
+.HyperMD-header-5 > .cm-fold-indicator.is-collapsed::before,
+.HyperMD-header-6 > .cm-fold-indicator.is-collapsed::before {
+  filter: brightness(0.6);
+  transform: rotate(90deg);
+}
+
