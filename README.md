@@ -15,11 +15,11 @@ This is a pure CSS implementation, no JavaScript is used.
 
 ## How to install
 
-Save the [header-level-icons.css](https://raw.githubusercontent.com/codewithcheese/obsidian-header-level-icons/main/header-level-icons.css) file to your computer.
+Save the `header-level-icon.css` file to your computer.
 
-Copy the css file into your vaults configuration folder. If your not sure where that is, follow the instructions in [Obsidian configuration folder docs](https://help.obsidian.md/Files+and+folders/Configuration+folder).
+Copy the css file into your vaults configuration folder. If your not sure where that is. Open `Settings`, go to `Appearance` (left menu), scroll down to `CSS Snippets`, click the folder icon to open your snippets folder.
 
-Enable the snippet in Settings -> Appearance. See the [Obsidian CSS snippets docs](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) for instructions.
+Once you have copied the file to your snippets it should appear in the list of `CSS Snippets`, otherwise click the refresh button, next to the open folder icon. Enable `header-level-icons` by flicking the switch. See the [Obsidian CSS snippets docs for instructions.](https://help.obsidian.md/Extending+Obsidian/CSS+snippets)
 
 For mobile, you will need to sync the snippet from your desktop vault and then enable it in your mobile settings.
 
